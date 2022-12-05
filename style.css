@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 500px;
+    height: 470px;
+    background: url("http://3.bp.blogspot.com/-UCpc2g0Tv8o/W-WC1othzLI/AAAAAAAACfs/sUU0WQYI1s0Zow-0xw_RIe702XKfc7zkgCK4BGAYYCw/s1600/aa.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 3px solid black;
+    border-radius: 75%;
+}
+
+.secs {
+    position: absolute;
+    /*merkezde olması için*/
+    top: 50%;
+    left: 50%;
+    height: 8.2rem;
+    width: 1px;
+    background-color: red;
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+}
+
+.mins{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 7rem;
+    width: 4px;
+    border-radius: 15px;
+    background-color: black;
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+
+}
+.hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5rem;
+    width: .5rem;
+    border-radius: 15px;
+    background-color: black;
+    transform: translateX(-50%);
+    transform-origin: 50% 0;
+}
+.dot{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 1rem;
+        width: 1rem;
+        background-color:black;
+        border-radius: 55%;
+        transform: translateX(-50%);
+    
+}
+
+
